@@ -76,10 +76,14 @@ class ParticipantesAdapter : RecyclerView.Adapter<ParticipantesViewHolder>(), Fi
 class ParticipantesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(item: Participante) {
         val nameParticipante = itemView.findViewById<TextView>(R.id.tv_name_part)
+        val phoneParticipante = itemView.findViewById<TextView>(R.id.tv_phone_part)
+        val idadeParticipante = itemView.findViewById<TextView>(R.id.tv_idade_part)
         val imageView = itemView.findViewById<ImageView>(R.id.imageView)
 
         with(itemView) {
             nameParticipante.text = item.name
+            phoneParticipante.text = item.phone
+            idadeParticipante.text = item.idade
 
             if (item.name == ANERODRIGUES){
                 imageView.background =

@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity(), MainListener {
 
     private fun initViewModel() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        viewModel = ViewModelProviders.of(
-                        this, ViewModelFactory()).get(MainViewModel::class.java)
+        viewModel =
+                ViewModelProviders.of(this, ViewModelFactory()).get(MainViewModel::class.java)
         binding.viewModel = viewModel
         viewModel.listener = this
 

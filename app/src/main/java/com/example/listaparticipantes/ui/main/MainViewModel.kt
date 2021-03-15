@@ -15,8 +15,11 @@ class MainViewModel : ViewModel() {
     val list: MutableLiveData<List<Participante>> = MutableLiveData()
 
     fun initViewModel() {
-        list.postValue(listOf(Participante(ANERODRIGUES), Participante(FELIPERODRIGUES), Participante(
-                FERNANDARODRIGUES), Participante(FERNANDORODRIGUES), Participante(TIAGORODRIGUES)))
+        list.postValue(listOf(Participante(ANERODRIGUES, "23 anos", "11965426346"),
+                Participante(FELIPERODRIGUES, "26 anos", "11976003188"),
+                Participante(FERNANDARODRIGUES, "18 anos", "19991297486"),
+                Participante(FERNANDORODRIGUES, "18 anos","11991090427"),
+                Participante(TIAGORODRIGUES, "25 anos","11945418403")))
         listener!!.onSetList()
         listener!!.onSearch()
     }
