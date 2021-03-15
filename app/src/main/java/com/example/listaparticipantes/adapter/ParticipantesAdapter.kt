@@ -1,4 +1,4 @@
-package com.example.listaparticipantes.adapter
+package com.example.listaparticipantes
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,6 @@ import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.listaparticipantes.R
 import com.example.listaparticipantes.model.Participante
 import com.example.listaparticipantes.utils.Constants.ANERODRIGUES
 import com.example.listaparticipantes.utils.Constants.FELIPERODRIGUES
